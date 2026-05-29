@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem 2rem;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 5)),
@@ -13,6 +13,10 @@
     background-position: center;
 }
 
+.section__titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 /* Conteudo hero */
 .hero__conteudo {
     max-width: 850px;
@@ -50,6 +54,8 @@
 
 
 
+
+
 .github:hover{
      transform: translateY(-10px);
 }
@@ -60,7 +66,6 @@
 
 .links{
     display: flex;
-    margin-bottom: 10px;
 }
 
 .links img{
@@ -70,5 +75,5 @@
 /*Cards*/
 
 .integrantes {
-    padding: 6rem 8%;
+    padding: 4rem 10%;
 }
