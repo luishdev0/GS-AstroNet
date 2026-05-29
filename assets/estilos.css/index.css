@@ -30,80 +30,14 @@ img {
     display: block;
 }
 
-/* Header */
-
-.header {
-    width: 100%;
-    background-color: #070b1f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 8%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #1b2447;
-}
-
-/* Logo*/
-
-.logo h1 {
-    font-size: 2rem;
-    color: #4cc9f0;
-    letter-spacing: 2px;
-}
-
-/* Nav */
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-/* Links menu */
-
-.menu__links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.menu__links a {
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.menu__links a:hover {
-    color: #4cc9f0;
-    border: 1px solid #1b2447;
-    border-radius: 20px;
-}
-
-/* menu responsivo */
-.menu__responsivo {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
 /*Hero*/
 
 .hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
     background:
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
-        url("../assets/img/img-01-planeta-terra.jpg");
-    background-size: cover;
-    background-position: center;
+        url("../img/img-01-planeta-terra.jpg");
+ 
 }
 
 /* Conteudo hero */
@@ -217,6 +151,7 @@ img {
     text-align: center;
     border: 1px solid #1f2d5a;
     transition: 0.3s;
+    max-height: 420px;
 }
 
 .card:hover {
@@ -235,6 +170,13 @@ img {
 
 .card p {
     color: #d1d1d1;
+}
+
+
+
+.links:hover{
+     transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
 }
 
 /* Beneficios*/
@@ -271,7 +213,7 @@ img {
     background:
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
-        url("../assets/img/img-02-terra-de-fundo.jpg");
+        url("../img/img-02-terra-de-fundo.jpg");
     background-size: cover;
     background-position: center;
 }

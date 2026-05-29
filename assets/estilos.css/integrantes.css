@@ -1,0 +1,74 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 5)),
+        url("../img/equipe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Conteudo hero */
+.hero__conteudo {
+    max-width: 850px;
+}
+
+.hero__conteudo h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(76, 201, 240, 0.5);
+}
+
+.hero__conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+}
+
+.card img {
+    border-radius: 1rem;
+    max-height: 250px;
+    margin-bottom: 20px;
+}
+
+.github, .linkedin{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+/*Cards*/
+
+
+
+
+
+.github:hover{
+     transform: translateY(-10px);
+}
+.linkedin:hover{
+     transform: translateY(-10px);
+    box-shadow: 5 5 10px
+}
+
+.links{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.links img{
+    border-radius: 0.1rem;
+}
+
+/*Cards*/
+
+.integrantes {
+    padding: 6rem 8%;
+}
