@@ -1,10 +1,4 @@
 .hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0rem 2rem;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 5)),
@@ -18,9 +12,6 @@
     margin-bottom: 2rem;
 }
 /* Conteudo hero */
-.hero__conteudo {
-    max-width: 850px;
-}
 
 .hero__conteudo h2 {
     font-size: 4rem;
@@ -49,12 +40,6 @@
 }
 
 /*Cards*/
-
-
-
-
-
-
 
 .github:hover{
      transform: translateY(-10px);

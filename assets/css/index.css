@@ -149,14 +149,11 @@ a {
 /* Chamada*/
 
 .chamada {
-    padding: 7rem 8%;
-    text-align: center;
     background:
         linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.9)),
         url("../img/img-02-terra-de-fundo.jpg");
-    background-size: cover;
-    background-position: center;
+   
 }
 
 .chamada h2 {
