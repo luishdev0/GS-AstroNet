@@ -2,19 +2,123 @@
 /*Links*/
 a {
     text-decoration: none;
-    color: none
+    color: inherit;
 }
 
-/*Hero*/
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Reutilizaveis*/
+.botao {
+    display: inline-block;
+    background: linear-gradient(90deg, #4cc9f0, #4361ee);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(76, 201, 240, 0.4);
+}
+
+.botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.7);
+}
+
+.section__titulo {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section__titulo h2 {
+    font-size: 2.8rem;
+    color: #4cc9f0;
+    text-shadow: 0 0 15px rgba(76, 201, 240, 0.3);
+}
+
+/* Header e menu nav*/
+.header {
+    width: 100%;
+    background-color: #070b1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1b2447;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #4cc9f0;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu__links a {
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.menu__links a:hover {
+    color: #4cc9f0;
+}
+
+.menu__responsivo {
+    display: none;
+    background: none;
+    border: none;
+    color: #4cc9f0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* Hero */
 .hero {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.9)),
-        url("../img/img-01-planeta-terra.jpg");
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/img-01-planeta-terra.jpg");
     background-size: cover;
     background-position: center;
+    padding: 2rem;
 }
 
+.hero__conteudo {
+    max-width: 850px;
+}
+
+.hero__conteudo h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(76, 201, 240, 0.5);
+}
+
+.hero__conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+}
 
 /* Sobre */
 .sobre__projeto {
@@ -27,7 +131,6 @@ a {
     display: flex;
     align-items: center;
     gap: 4rem;
-    flex-wrap: wrap;
 }
 
 /* Texto Sobre */
@@ -50,6 +153,7 @@ a {
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(76, 201, 240, 0.2);
     max-height: 500px;
+    object-fit: cover;
 }
 
 /*Serviços*/
@@ -61,7 +165,8 @@ a {
 .cards__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
 }
 
 
@@ -96,11 +201,11 @@ a {
 
 /* Chamada*/
 .chamada {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.9)),
-        url("../img/img-02-terra-de-fundo.jpg");
-   
+    padding: 7rem 8%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/img-02-terra-de-fundo.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .chamada h2 {
@@ -113,3 +218,93 @@ a {
     color: #d1d1d1;
 }
 
+/* Footer */
+.footer {
+    background-color: #03050f;
+    text-align: center;
+    padding: 2rem 8%;
+    border-top: 1px solid #1f2d5a;
+}
+
+.footer h2 {
+    color: #4cc9f0;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #a8a8a8;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade*/
+
+/* Tablets (Telas até 768px) */
+@media(max-width: 768px) {
+    .menu__responsivo {
+        display: block;
+    }
+
+    .menu__links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #070b1f;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        display: none;
+        border-bottom: 1px solid #1b2447;
+    }
+
+    .menu__links.active {
+        display: flex;
+    }
+
+    .sobre__container {
+        flex-direction: column;
+    }
+
+    .cards__container {
+        flex-direction: column;
+    }
+    
+    .hero__conteudo h2 {
+        font-size: 2.8rem;
+    }
+}/* até 480px */
+@media(max-width: 480px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero__conteudo h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero__conteudo p {
+        font-size: 1rem;
+    }
+
+    .section__titulo h2 {
+        font-size: 2rem;
+    }
+
+    .chamada h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+}
