@@ -157,6 +157,15 @@
     .card a img {
         margin-left: 0;
     }
+
+        .imagemcontato {
+        width: 90%;
+        height: 400px;
+    }
+
+    .section__titulo h2 {
+        font-size: 38px;
+    }
     
 }
 
