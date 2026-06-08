@@ -1,0 +1,74 @@
+.hero__conteudo{
+
+}
+
+.card{
+    width: 40%;
+    max-height: max-content;
+    margin-left: 30px;
+}
+
+.card h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    
+}
+.card p{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+}
+.card ul li{
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+.card h3{
+    font-size: 25px;
+    margin-top: 50px;
+}
+.card a img{
+    width: 100px;
+    height: 100px;
+
+
+    margin-top:50px ;
+    margin-left: 42%;
+
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.61);
+    border-radius: 100%;
+
+}
+
+.imagem__parcerias img{
+    display: flex;
+    
+
+
+    border: 1px solid;
+    border-radius: 10%;
+
+    width: 600px;
+    height: 600px;
+        box-shadow: 0 0 25px rgb(255, 255, 255);
+
+    
+    
+}
+.imagem__parcerias {
+    display: flex;
+    justify-content: center;
+    
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 10%;
+
+    margin-top: -33%;
+    margin-left: 75%;
+    margin-bottom: 100px;
+
+}
