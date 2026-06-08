@@ -72,11 +72,8 @@
     border: 1px solid #1f2d5a;
 }
 
-/* ==========================================================================
-   MUDANÇA DE GRID PARA FLEX (BENEFÍCIOS)
-   ========================================================================== */
 .beneficios__conteudo {
-    display: flex; /* Removido display: grid */
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
@@ -88,9 +85,7 @@
     max-width: 280px;
 }
 
-/* ==========================================================================
-   RESPONSIVIDADE AJUSTADA (SEM ROLAGEM LATERAL)
-   ========================================================================== */
+/* Responsividade */
 
 /* Tablets (Telas até 768px) */
 @media (max-width: 768px) {
@@ -99,7 +94,7 @@
     .hero__conteudo h1,
     .hero__conteudo h2 {
         font-size: 2.8rem !important;
-        word-wrap: break-word; /* Força a quebra de palavras se necessário */
+        word-wrap: break-word; 
     }
 
     .chamada h2 {
@@ -137,15 +132,14 @@
         font-size: 1.5rem;
     }
 
-    /* Ajuste essencial para os títulos não estourarem no celular */
     .hero__conteudo h1,
     .hero__conteudo h2 {
-        font-size: 1.8rem !important; /* Tamanho seguro para telas pequenas */
+        font-size: 1.8rem !important; 
         line-height: 1.3;
     }
 
     .chamada h2 {
-        font-size: 1.6rem !important; /* Tamanho seguro para a chamada de fechamento */
+        font-size: 1.6rem !important; 
         line-height: 1.3;
     }
 
@@ -158,7 +152,6 @@
         font-size: 1.8rem;
     }
 
-    /* Reduz o padding das seções para o texto ter mais espaço horizontal */
     .hero,
     .sobre__projeto, 
     .servicos, 

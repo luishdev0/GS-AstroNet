@@ -92,7 +92,7 @@ img {
 /*===================== Header (nav bar) ======================*/
 .header {
     width: 100%;
-    background-color: #070b1f;
+    background-color: #070b1fe8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,10 +104,9 @@ img {
 }
 
 /* Logo*/
-.logo h1 {
-    font-size: 2rem;
-    color: #4cc9f0;
-    letter-spacing: 2px;
+
+.logo img{
+    max-width: 300px;
 }
 
 /* Nav */
@@ -223,9 +222,9 @@ img {
     transition: 0.3s;
 }
 
-/* ==========================================================================
-   RESPONSIVIDADE AJUSTADA (SEM ROLAGEM LATERAL)
-   ========================================================================== */
+/*
+   Responsividade menu
+*/
 
 /* Tablets (Telas até 768px) */
 @media (max-width: 768px) {
