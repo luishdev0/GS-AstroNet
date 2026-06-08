@@ -112,29 +112,32 @@
     border-radius: 10%;
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
-    .conteudo__contato {
-        flex-direction: column;
+    .conteudocontato {
+        gap: 30px;
     }
 
     .card {
-        width: 90%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .card a img {
+        width: 45%;
         margin-left: 0;
     }
 
-    .imagem__contato {
-        width: 90%;
-        height: auto;
+    .card h2 {
+        font-size: 40px;
     }
 
-    .imagem__contato img {
-        height: auto;
+    .card p {
+        font-size: 24px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .imagemcontato {
+        width: 450px;
+        height: 450px;
     }
 }
+
