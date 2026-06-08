@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroNet</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <script src="./assets/JS.js"></script>
+    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <script src="../assets/JS/faq.js" defer></script>
+    <script src="../assets/JS/menu.js"></script>
 </head>
 
 <body>
@@ -18,6 +20,8 @@
 
         <!-- MENU -->
         <nav class="menu">
+
+            <button class="menu__responsivo">☰</button>
 
             <ul class="menu__links" id="menu__links">
                 <li><a href="../index.html">Home</a></li>
@@ -32,3 +36,80 @@
         </nav>
 
     </header>
+
+  <main>
+    <section class="hero-content">
+      <div class="badge">Internet via satélite para regiões remotas</div>
+
+      <h1>
+        Conectando regiões<br />
+        <span class="gradient-text">sem limites.</span>
+      </h1>
+
+      <p class="description">
+        Converse com o assistente virtual da AstroNet e descubra como levar internet via satélite
+        para comunidades, empresas, fazendas, mineradoras e operações em regiões remotas.
+      </p>
+
+      <div class="buttons">
+        <button class="btn btn-primary" data-open-chat>
+          Conversar com a AstroNet
+        </button>
+      </div>
+    </section>
+
+    <section class="card-area" id="chatbot">
+      <div class="glass-card" id="chatCard">
+        <div class="card-header">
+          <div>
+            <h2>AstroNet FAQ Bot</h2>
+
+            <div class="status">
+              <span class="status-dot"></span>
+              Online agora
+            </div>
+          </div>
+
+          <div class="satellite">🤖</div>
+        </div>
+
+        <div class="mini-chat" id="chatPreview" data-open-chat>
+          <div class="message bot">
+            Olá! Sou o assistente da AstroNet. Como posso ajudar?
+          </div>
+
+          <div class="message user">
+            A AstroNet atende regiões remotas?
+          </div>
+
+          <div class="message bot">
+            Sim! A AstroNet foi criada para levar conectividade via satélite a locais de difícil acesso.
+          </div>
+
+          <div class="open-chat-hint">
+            Clique aqui para iniciar uma conversa real com o chatbot
+          </div>
+        </div>
+
+        <div class="real-chat-wrapper" id="realChatWrapper">
+          <div id="WebChatContainer"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__conteudo">
+            <h2>AstroNet</h2>
+            <p>
+                Projeto acadêmico desenvolvido para a disciplina
+                Front-End Design Engineering.
+            </p>
+            <p>
+                © 2026 - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
