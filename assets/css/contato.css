@@ -213,4 +213,35 @@
         height: 300px;
     }
 }
+@media (max-width: 400px) {
+
+    .sectiontitulo h2 {
+        font-size: 28px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .card ul li {
+        font-size: 16px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card a img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .imagemcontato {
+        height: 250px;
+    }
+}
 
