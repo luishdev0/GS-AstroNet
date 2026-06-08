@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroNet</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <script src="./assets/JS.js"></script>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/contato.css">
+    <script src="../assets/JS/menu.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +17,9 @@
             <img src="../assets/img/img-18-logo.png" alt="imagem da logo da empresa">
         </div>
 
-        <!-- MENU -->
         <nav class="menu">
+            
+            <button class="menu__responsivo">☰</button>
 
             <ul class="menu__links" id="menu__links">
                 <li><a href="../index.html">Home</a></li>
@@ -28,7 +30,120 @@
                 <li><a href="./solucao.html">Solução</a></li>
                 <li><a href="./login.html">Login</a></li>
             </ul>
-
         </nav>
 
     </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero__conteudo">
+
+                <h2>Fale Conosco</h2>
+
+                <p>
+                    Entre em contato conosco para saber mais sobre o projeto
+                    AstroNet, tirar dúvidas ou discutir parcerias. Estamos
+                    ansiosos para ouvir de você!
+                </p>
+
+            </div>
+        </section>
+
+        <section class="opcoes__contato">
+
+            <!-- PARCERIAS -->
+            <div class="bloco__contato">
+
+                <div class="section__titulo">
+                    <h2>Parcerias</h2>
+                </div>
+
+                <div class="conteudo__contato">
+
+                    <article class="card">
+                        <h2 class="cards__h2">Gmail</h2>
+
+                        <p>Contate-nos via email para:</p>
+
+                        <ul>
+                            <li>- Parcerias</li>
+                            <li>- Falar com nossos assessores</li>
+                            <li>- Marcar reuniões</li>
+                        </ul>
+
+                        <h3>Segue link para e-mail abaixo:</h3>
+
+                        <a href="#">
+                            <img src="../assets/img/img-21-email-icone.png" alt="ícone de email">
+                        </a>
+                    </article>
+
+                    <div class="imagem__contato">
+                        <img src="../assets/img/img-19-parcerias.jpg" alt="imagem de parceria">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- DÚVIDAS -->
+            <div class="bloco__contato">
+
+                <div class="section__titulo">
+                    <h2>Dúvidas</h2>
+                </div>
+
+                <div class="conteudo__contato">
+
+                    <article class="card">
+                        <h2 class="cards__h2">Telegram</h2>
+
+                        <p>Contate-nos via Telegram para:</p>
+
+                        <ul>
+                            <li>- Tirar dúvidas</li>
+                            <li>- Falar com nosso assistente</li>
+                            <li>- Receber suporte rápido</li>
+                        </ul>
+
+                        <h3>Segue link para Telegram abaixo:</h3>
+
+                        <a href="https://t.me/astronet_faq_bot" target="_blank">
+                            <img src="../assets/img/img-22-telegram-icone.png" alt="ícone do Telegram">
+                        </a>
+                    </article>
+
+                    <div class="imagem__contato">
+                        <img src="../assets/img/img-20-duvidas.jpg" alt="imagem de dúvidas">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__conteudo">
+
+            <h2>AstroNet</h2>
+
+            <p>
+                Projeto acadêmico desenvolvido para a disciplina
+                Front-End Design Engineering.
+            </p>
+
+            <p>
+                © 2026 - Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

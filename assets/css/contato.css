@@ -1,0 +1,140 @@
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 5)),
+        url("../img/img-23-astrounauta.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Área geral dos contatos */
+.opcoes__contato {
+    width: 100%;
+    padding: 60px 0;
+}
+
+/* Bloco inteiro: Parcerias / Dúvidas */
+.bloco__contato {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* Título da seção */
+.section__titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section__titulo h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Conteúdo lado a lado */
+.conteudo__contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    width: 40%;
+    max-height: max-content;
+    margin-left: 30px;
+}
+
+.card h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+/* Ícones dos cards: email e telegram */
+.card a img {
+    width: 100px;
+    height: 100px;
+
+    margin-top: 50px;
+    margin-left: 42%;
+
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.61);
+    border-radius: 100%;
+}
+
+/* Imagens grandes: Parcerias e Dúvidas */
+.imagem__contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid #000;
+    border-radius: 10%;
+
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.imagem__contato img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10%;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+
+    .conteudo__contato {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .card a img {
+        margin-left: 0;
+    }
+
+    .imagem__contato {
+        width: 90%;
+        height: auto;
+    }
+
+    .imagem__contato img {
+        height: auto;
+    }
+}
